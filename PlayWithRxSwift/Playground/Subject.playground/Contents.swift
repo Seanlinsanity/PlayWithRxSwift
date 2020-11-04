@@ -57,9 +57,10 @@ variable.value.append("Bryant")
 */
 
 
-/*
-# Behavior Relay
- let relay = BehaviorRelay(value: ["A"])
+
+//Behavior Relay
+let relay = BehaviorRelay(value: ["preA"])
+relay.accept(relay.value + ["A"])
  relay.asObservable().subscribe{
      print($0)
  }
@@ -67,7 +68,7 @@ variable.value.append("Bryant")
  var value = relay.value
  value.append("C")
  relay.accept(value)
-*/
+
 
 
 

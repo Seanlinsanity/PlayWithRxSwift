@@ -50,9 +50,19 @@ student.asObservable()
 student.onNext(curry)
 curry.score.accept(70)
 curry.score.accept(100)
-//student.onNext(thomphson)
-//thomphson.score.accept(30)
-//curry.score.accept(95)
+student.onNext(thomphson)
+thomphson.score.accept(30)
+curry.score.accept(95)
 
 
 
+enum CustomKey: String {
+    
+    case firstKey
+    case secondKey
+}
+
+print(CustomKey.firstKey.rawValue)
+[(1, 2)].forEach { (a, b) in
+    print(a, b)
+}
