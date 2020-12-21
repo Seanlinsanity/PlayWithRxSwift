@@ -2,30 +2,29 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-/*
-# Publish Subject
-let subject = PublishSubject<String>()
-subject.onNext("event 1")
-subject.subscribe { (event) in
-    print(event)
-}
-subject.onNext("event 2")
-subject.onNext("event 3")
-//subject.onCompleted()
-subject.dispose()
-subject.onNext("event 4")
-*/
 
-/*
-# Behavior Subject
- let subject = BehaviorSubject(value: "initial value")
- subject.onNext("event 1")
- subject.subscribe {
-     print($0)
- }
- subject.onNext("event 2")
- subject.dispose()
-*/
+//# Publish Subject
+//let subject = PublishSubject<String>()
+//subject.onNext("event 1")
+//subject.subscribe { (event) in
+//    print(event)
+//}
+//subject.onNext("event 2")
+//subject.onNext("event 3")
+////subject.onCompleted()
+//subject.dispose()
+//subject.onNext("event 4")
+
+
+//# Behavior Subject
+// let subject = BehaviorSubject(value: "initial value")
+// subject.onNext("event 1")
+// subject.subscribe {
+//     print($0)
+// }
+// subject.onNext("event 2")
+// subject.dispose()
+
 
 /*
 # Replay Subject
@@ -61,14 +60,13 @@ variable.value.append("Bryant")
 //Behavior Relay
 let relay = BehaviorRelay(value: ["preA"])
 relay.accept(relay.value + ["A"])
- relay.asObservable().subscribe{
-     print($0)
- }
- relay.accept(relay.value + ["B"])
- var value = relay.value
- value.append("C")
- relay.accept(value)
-
+relay.asObservable().subscribe{
+ print($0)
+}
+relay.accept(relay.value + ["B"])
+var value = relay.value
+value.append("C")
+relay.accept(value)
 
 
 

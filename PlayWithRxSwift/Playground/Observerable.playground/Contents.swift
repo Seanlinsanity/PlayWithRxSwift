@@ -36,11 +36,11 @@ observable4.subscribe(onNext: { element in
 // disposing
 let disposeBag = DisposeBag()
 Observable.of("A", "B", "C")
-    .subscribe {
+    .subscribe(onNext: {
         print($0)
-    }.disposed(by: disposeBag)
+    }).disposed(by: disposeBag)
 
-Observable<String>.create { observer in
+let observableStr = Observable<String>.create { observer in
     print("begin create")
     observer.onNext("H")
     observer.onNext("i")
@@ -53,7 +53,8 @@ Observable<String>.create { observer in
         print("disposable create")
     }
 }
-.subscribe(onNext: {
+
+observableStr.subscribe(onNext: {
     print("next: " , $0)
 }, onError: {
     print("error: ", $0)

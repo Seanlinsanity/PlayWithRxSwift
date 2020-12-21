@@ -70,6 +70,7 @@
 		C034C0CD70FCC63E7CE2CCDB /* Pods-PlayWithRxSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayWithRxSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-PlayWithRxSwiftUITests/Pods-PlayWithRxSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD937BE25B1A197BFC16EE38 /* Pods_PlayWithRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayWithRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF153BB13E05F02E8613F0C9 /* Pods-PlayWithRxSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayWithRxSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-PlayWithRxSwiftTests/Pods-PlayWithRxSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		F7241DB125908A4D00A70231 /* RxSwiftARC.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwiftARC.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +182,7 @@
 				14CB664225286C7A00AD15FB /* Filter.playground */,
 				140A482D2531AED200B39A84 /* TransformOperator.playground */,
 				14FC5D682536FB7300D61592 /* CombineOperator.playground */,
+				F7241DB125908A4D00A70231 /* RxSwiftARC.playground */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
