@@ -71,6 +71,7 @@
 		CD937BE25B1A197BFC16EE38 /* Pods_PlayWithRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayWithRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF153BB13E05F02E8613F0C9 /* Pods-PlayWithRxSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayWithRxSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-PlayWithRxSwiftTests/Pods-PlayWithRxSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		F7241DB125908A4D00A70231 /* RxSwiftARC.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwiftARC.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F75633B52594407E002EE7DB /* RxTableView.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxTableView.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +184,7 @@
 				140A482D2531AED200B39A84 /* TransformOperator.playground */,
 				14FC5D682536FB7300D61592 /* CombineOperator.playground */,
 				F7241DB125908A4D00A70231 /* RxSwiftARC.playground */,
+				F75633B52594407E002EE7DB /* RxTableView.playground */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
