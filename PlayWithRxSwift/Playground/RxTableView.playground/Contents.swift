@@ -6,12 +6,10 @@ import RxDataSources
 import PlaygroundSupport
 
 PlaygroundPage.current.needsIndefiniteExecution = true
-let disposeBag = DisposeBag()
 
-class SimpleTableViewExampleSectionedViewController
-    : UIViewController
-    , UITableViewDelegate {
+class SimpleTableViewExampleSectionedViewController: UIViewController, UITableViewDelegate {
     var tableView = UITableView(frame: .zero, style: .grouped)
+    let disposeBag = DisposeBag()
     let name: String = "Sean"
     let items = Observable.just([
         SectionModel(model: "First section", items: [
@@ -50,10 +48,10 @@ class SimpleTableViewExampleSectionedViewController
     
     func makeDataSource() -> RxTableViewSectionedReloadDataSource<SectionModel<String, Double>>{
         return RxTableViewSectionedReloadDataSource<SectionModel<String, Double>>(
-            configureCell: { (_, tv, indexPath, element) in
+            configureCell: { [weak self] (_, tv, indexPath, element) in
                 let cell = tv.dequeueReusableCell(withIdentifier: "Cell")!
                 cell.textLabel?.text = "\(element) @ row \(indexPath.row)"
-                print(self.name)
+                print(self?.name)
                 return cell
             },
             titleForHeaderInSection: { dataSource, sectionIndex in
